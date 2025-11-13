@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Send, TrendingUp, Users, Eye, EyeOff, Settings, LogOut, Bell, Search, ArrowUpRight, ArrowDownLeft, Zap, Clock } from 'lucide-react'
+import { Send, TrendingUp, Users, Eye, EyeOff, Settings, LogOut, Bell, Search, ArrowUpRight, ArrowDownLeft, Clock } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Dashboard() {
