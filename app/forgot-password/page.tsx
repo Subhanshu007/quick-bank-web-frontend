@@ -36,7 +36,7 @@ export default function ForgotPassword() {
         {step === 1 && (
           <div className="card p-8">
             <h2 className="text-xl font-bold text-dark mb-4">Enter your email</h2>
-            <p className="text-gray-600 text-sm mb-6">We'll send you instructions to reset your password.</p>
+            <p className="text-gray-600 text-sm mb-6">We&apos;ll send you instructions to reset your password.</p>
 
             <input
               type="email"
@@ -78,7 +78,7 @@ export default function ForgotPassword() {
             </button>
 
             <p className="text-center text-gray-600 text-sm">
-              Didn't receive the code?{' '}
+              Didn&apos;t receive the code?{' '}
               <button className="text-primary font-semibold hover:underline">
                 Resend
               </button>
