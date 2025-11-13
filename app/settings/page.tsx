@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft, Bell, Lock, Eye, Smartphone, Globe, HelpCircle, LogOut, Trash2, Toggle } from 'lucide-react'
+import { ArrowLeft, Bell, Lock, Eye, Smartphone, HelpCircle, LogOut, Trash2 } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Settings() {
@@ -15,7 +15,7 @@ export default function Settings() {
     language: 'en',
   })
 
-  const handleToggle = (key: string) => {
+  const handleToggle = (key: 'emailNotifications' | 'smsNotifications' | 'pushNotifications' | 'twoFactorAuth' | 'biometricAuth') => {
     setSettings({
       ...settings,
       [key]: !settings[key],

@@ -34,7 +34,7 @@ export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
       {icon ? <span className={cn('ml-4 flex items-center', variant === 'glass' ? 'text-blue-100' : 'text-gray-500')}>{icon}</span> : null}
       <select
         ref={ref}
-        className={cn(selectClasses[variant], icon && 'pl-2', className)}
+        className={cn(selectClasses[variant], icon ? 'pl-2' : '', className)}
         disabled={disabled}
         {...props}
       >

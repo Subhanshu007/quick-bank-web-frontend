@@ -13,7 +13,6 @@ export default function Recipients() {
   ])
 
   const [searchTerm, setSearchTerm] = useState('')
-  const [selectedRecipient, setSelectedRecipient] = useState<number | null>(null)
 
   const filteredRecipients = recipients.filter(r =>
     r.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
